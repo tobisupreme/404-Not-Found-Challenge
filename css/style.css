@@ -1,18 +1,197 @@
-/******************************************
+/*****************************************
 /* CSS
 /*******************************************/
 
 /* Box Model Hack */
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+html {
+  font-size: 10px;
+}
+.container,
+.hero,
+.info {
+  display: flex;
+}
+.info,
+.container {
+  flex-direction: column;
+}
+.container {
+  border-radius: 8px;
+  max-width: 1440px;
+  margin: 50px auto;
+}
 
-
+/* Header */
+header {
+  font-family: 'Inconsolata';
+  font-size: 2.4em;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 120px;
+}
+.logo {
+  padding-top: 40px;
+}
+.logo {
+  margin-left: 77px;
+}
+/* Body */
+.hero { 
+  font-family: 'Space Mono';
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 308px;
+}
+.image-box {
+  align-self: flex-start;
+  max-width: 539.22px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /******************************************
-/* ADDITIONAL STYLES
+/* Info section styling
 /*******************************************/
+.info-head {
+  font: normal bold 6.4em/95px 'Space Mono';
+  max-width: 586px;
+  letter-spacing: -0.035em;
+  margin-bottom: 36px;
+  color: #333333;
+}
+.info-body {
+  font: normal normal 24px/36px 'Space Mono';
+  letter-spacing: -0.035em;
+  max-width: 381px;
+  color: #4F4F4F;
+  margin-bottom: 64px;
+}
+.home-link {
+  background-color: #333333;
+  width: max-content;
+  text-decoration: none;
+  font: normal bold 1.4em/21px 'Space Mono';
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 24px 43px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  font: normal 500 1.4em/17.07px 'Montserrat';
+  margin-bottom: 24px;
+}
+footer a,
+footer {
+  color: #BDBDBD;
+}
+footer span {
+  text-decoration: none;
+}
+.devchallenge-link {
+  text-decoration: none;
+}
+
+/* Mobile device */
+@media screen and (max-width: 560px) {  
+  .hero,
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    border-radius: 8px;
+    max-width: 375px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding-left: 24px;
+  }
+  /* Header */
+  header {    
+    align-self: flex-start;
+    font: normal bold 24px/25.18px 'Inconsolata';
+    text-transform: uppercase;
+    margin-bottom: 64px;
+  }
+  .logo {
+    letter-spacing: -0.08em;
+    margin-left: 0;
+  }
+  /* Hero*/  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .image-box {
+    max-width: 286.83px;
+    margin-bottom: 77.65px;
+    align-self: center;
+    margin-left: -24px;
+  }
+  .info-head {
+    font: normal bold 48px/71.09px 'Space Mono';
+    letter-spacing: -0.035em;
+    margin-bottom: 30px;
+    color: #333333;
+  }
+  .info-body {
+    font: normal 400 18px/26.66px 'Space Mono';
+    letter-spacing: -0.035em;
+    margin-bottom: 66px;
+    color: #4F4F4F;
+  }
+  .home-link {
+    background-color: #333333;
+    width: max-content;
+    text-decoration: none;
+    font: normal bold 1.4em/21px 'Space Mono';
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 24px 43px;
+  }
+  .hero {
+    margin-bottom: 114px;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    font: normal 500 1.4em/17.07px 'Montserrat';
+    margin: 0 0 24px -24px;
+  }
+  footer a,
+  footer {
+    color: #BDBDBD;
+  }
+  footer span {
+    text-decoration: none;
+  }
+  .devchallenge-link {
+    text-decoration: none;
+  }
+}
+/* Smaller Laptop Screens */
+@media (min-width: 561px) and (max-width: 960px) {
+  .container {
+    transform: scale(.9);
+  }
+  .image-box {
+    flex-shrink: 3;
+  }
+  
+}
