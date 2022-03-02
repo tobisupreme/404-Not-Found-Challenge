@@ -69,5 +69,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [tobisupreme](https://github.com/tobisupreme)
-- Twitter [tobisupreme](https://twitter.com/tobisupreme)
+- GitHub - [tobisupreme](https://github.com/tobisupreme)
+- Twitter - [tobisupreme](https://twitter.com/tobisupreme)
