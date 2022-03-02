@@ -42,7 +42,7 @@ devchallenges.io
 
 ![screenshot](https://i.ibb.co/gRrtMwC/image.png)
 
-- Click here to see a <a href="https://sad-banach-d38dbe.netlify.app">demo</a>.
+- Click .[here](https://sad-banach-d38dbe.netlify.app) to see a demo.
 
 
 ### Built With
